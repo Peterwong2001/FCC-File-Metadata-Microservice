@@ -15,11 +15,11 @@ app.get('/', function (req, res) {
 
 
 let resObj = {};
-app.post("/api/fileanalyse", upload.none(), function(req, res) {
-  resObj["name"]
-  resObj["type"]
-  resObj["size"]
-  res.json(resObj);
+
+app.post("/api/fileanalyse", upload.none('upfile'), function(req, res) {
+  console.log("test");
+ 
+  
 })
 
 
